@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+	background: #e2988b;
+	overflow-x: hidden;
+}
+
+@keyframes add-shadow {
+	to {
+		box-shadow: 0 5px 50px -5px hsla(0, 0%, 100%, .1), 0 0 0 1px hsla(0, 0%, 100%, .10);
+		background: rgba(0, 0, 0, .3);
+	}
+}
+
+#header {
+	backdrop-filter: blur(10px);
+	animation: add-shadow linear both;
+	position: sticky;
+	top: 0;
+}
+
+#header {
+	animation-timeline: scroll();
+	animation-range: 0 150px;
+}
