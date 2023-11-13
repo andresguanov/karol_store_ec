@@ -1,5 +1,5 @@
 import { cn } from '@/lib/utils'
-import { Children, ReactNode, cloneElement } from 'react'
+import { ReactNode } from 'react'
 
 interface MarqueeProps {
 	className?: string
